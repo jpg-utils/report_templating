@@ -27,7 +27,7 @@ If you need to save a version of your report, you will either need to save or re
 
 ## Samples
 
-The test directory holds 3 sample scripts showing how to format your output. Outside of the 4 rules above, you have a lot of leeway on what can be output.
+The test directory holds 3 sample scripts showing how to format your output. Outside of the rules above, you have a lot of leeway on what can be output.
 
 The report.html is a sample report showing the results of these 3 sample scripts. It is encouraged to remove these scripts prior to production use.
 

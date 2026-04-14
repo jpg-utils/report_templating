@@ -10,8 +10,13 @@ function write-html {
     [Parameter (Mandatory=$false)]
     [string] $format = "list"
     )
-process{
- return ($testresult | ConvertTo-Html -as $format -Fragment -PreContent "<details><summary>$testname</summary>" -PostContent "</details>")
+process{ 
+    try{
+ return ($testresult | ConvertTo-Html -as $format -Fragment -PreContent "<details><summary>$testname</summary>"-PostContent "</details>")
+    }
+    catch{
+        return "<details><summary>$testname</summary><p>$testresult</p></details>"
+    }
 }
 }
 
